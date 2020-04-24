@@ -1,8 +1,8 @@
-from models.models import Film, Serie, Playlist
+from models.models import Movie, Serie, Playlist
 
-avengers = Film("avengers - infinity war", 2018, 160)
+avengers = Movie("avengers - infinity war", 2018, 160)
 rick_and_morty = Serie("rick and morty", 2016, 4)
-lotr = Film("the lord of the rings", 2000, 160)
+lotr = Movie("the lord of the rings", 2000, 160)
 adventure_time = Serie("adventure time", 2014, 8)
 
 avengers.add_like()

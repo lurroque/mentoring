@@ -45,9 +45,9 @@ class Program(object):
         return f"Name: {self._name} - Year: {self.year} - Likes: {self._likes}"
 
 
-class Film(Program):
+class Movie(Program):
 
-    """Docstring for Film. """
+    """Docstring for Movie. """
 
     def __init__(self, name, year, duration):
         """TODO: to be defined. """
