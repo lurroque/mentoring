@@ -8,6 +8,13 @@ def test_create_program():
     assert program.year == 2020
 
 
+def test_add_likes_for_program():
+    program = Program("training day", 2001)
+    program.add_like()
+
+    assert program.likes == 1
+
+
 def test_create_film():
     film = Movie("the lord of the rings", 1986, 160)
 
