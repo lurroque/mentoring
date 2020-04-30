@@ -51,10 +51,20 @@ class Serie(Program):
             "- Likes: {self._likes}"
 
 
-class Playlist(list):
+class Playlist():
     def __init__(self, name, programs):
         self.name = name
         self._programs = programs
+
+    # Essa característica é chamada de composição
+    # Duck typing é a característica da linguagem em herdar
+    # comportamentos de outras classes
+    # Evita acoplamento entre classes
+    # Se algo for mudado na superclasse, algo pode quebrar na subclasse
+    # Dunder method que permite que a classe seja um iterável
+    # É possível verificar se um item está na lista. Ex: value in list
+    def __geititem__(self, item):
+        return self._programs[item]
 
     @property
     def size(self):
