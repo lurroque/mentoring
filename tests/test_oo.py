@@ -1,4 +1,11 @@
-from oo.models.models import Movie
+from oo.models.models import Movie, Program
+
+
+def test_create_program():
+    program = Program("the last dance", 2020)
+
+    assert program.name == "the last dance".title()
+    assert program.year == 2020
 
 
 def test_create_film():
