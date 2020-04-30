@@ -20,7 +20,9 @@ class Program(object):
         self._likes += 1
 
     def __str__(self):
-        return f"Name: {self._name} - Year: {self.year} - Likes: {self._likes}"
+        return f"Name: {self._name}"\
+                "- Year: {self.year}"\
+                "- Likes: {self._likes}"
 
 
 class Movie(Program):
@@ -30,7 +32,10 @@ class Movie(Program):
         self.duration = duration
 
     def __str__(self):
-        return f"Name: {self._name} - Year: {self.year} - Duration: {self.duration} Likes: {self._likes}"
+        return f"Name: {self._name}"\
+                "- Year: {self.year}"\
+                "- Duration: {self.duration}"\
+                "- Likes: {self._likes}"
 
 
 class Serie(Program):
@@ -40,7 +45,10 @@ class Serie(Program):
         self.seasons = seasons
 
     def __str__(self):
-        return f"Name: {self._name} - Year: {self.year} - Seasons: {self.seasons} Likes: {self._likes}"
+        return f"Name: {self._name}"\
+            "- Year: {self.year}"\
+            "- Seasons: {self.seasons}"\
+            "- Likes: {self._likes}"
 
 
 class Playlist(list):
