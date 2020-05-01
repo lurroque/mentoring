@@ -16,6 +16,8 @@ adventure_time.add_like()
 
 films_and_series = [avengers, rick_and_morty, lotr, adventure_time]
 weekend_playlist = Playlist("weekend", films_and_series)
+print(len(weekend_playlist))
+print(avengers in weekend_playlist)
 for program in weekend_playlist:
 # É possível verificar o atributo dentro de um tipo de objeto em tempo de execução
     # A função hasattr verifica se um objeto tem determinado atributo
