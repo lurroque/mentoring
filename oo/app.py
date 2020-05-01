@@ -31,4 +31,3 @@ for program in weekend_playlist:
 # Desvantagens da herança
 # Algum método da classe herdada pode ter sido escrito em cpython e estar protegido
 # Traz toda a complexidade da classe herdada, é necessário ler toda a sua documentação para essa implementação
-# 
