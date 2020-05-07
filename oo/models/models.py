@@ -21,8 +21,8 @@ class Program(object):
 
     def __str__(self):
         return f"Name: {self._name}"\
-                "- Year: {self.year}"\
-                "- Likes: {self._likes}"
+                f"- Year: {self.year}"\
+                f"- Likes: {self._likes}"
 
 
 class Movie(Program):
@@ -33,9 +33,9 @@ class Movie(Program):
 
     def __str__(self):
         return f"Name: {self._name}"\
-                "- Year: {self.year}"\
-                "- Duration: {self.duration}"\
-                "- Likes: {self._likes}"
+                f"- Year: {self.year}"\
+                f"- Duration: {self.duration}"\
+                f"- Likes: {self._likes}"
 
 
 class Serie(Program):
@@ -46,9 +46,9 @@ class Serie(Program):
 
     def __str__(self):
         return f"Name: {self._name}"\
-            "- Year: {self.year}"\
-            "- Seasons: {self.seasons}"\
-            "- Likes: {self._likes}"
+            f"- Year: {self.year}"\
+            f"- Seasons: {self.seasons}"\
+            f"- Likes: {self._likes}"
 
 
 class Playlist():
