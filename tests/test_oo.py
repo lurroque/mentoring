@@ -1,4 +1,4 @@
-from oo.models.models import Movie, Program
+from oo.models.models import Program, Movie, Serie
 
 
 def test_create_program():
@@ -35,3 +35,10 @@ def test_add_likes_for_film_when_is_not_zero():
     film.add_like()
 
     assert film.likes != 0
+
+def test_create_serie():
+    serie = Serie("rick and morty", 2015, 5)
+
+    assert serie.name == "rick and morty". title()
+    assert serie.year == 2015
+    assert serie.seasons == 5
