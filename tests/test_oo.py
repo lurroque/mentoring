@@ -36,9 +36,17 @@ def test_add_likes_for_film_when_is_not_zero():
 
     assert film.likes != 0
 
+
 def test_create_serie():
     serie = Serie("rick and morty", 2015, 5)
 
     assert serie.name == "rick and morty". title()
     assert serie.year == 2015
     assert serie.seasons == 5
+
+
+def test_add_likes_for_serie():
+    serie = Serie("rick and morty", 2015, 5)
+    serie.add_like()
+
+    assert serie.likes == 1
